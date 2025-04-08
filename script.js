@@ -20,4 +20,4 @@ function showNotification({ top = 0, right = 0, html }) {
   }, 1500);
 }
 
-showNotification({top: 10, right: 10, html: "Notification!",});
+showNotification({top: 20, right: 25, html: "Notification!",});

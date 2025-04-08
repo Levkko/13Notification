@@ -54,3 +54,35 @@ footer {
   font-size: 1.1em;
   color: #ff9999;
 }
+
+.notification {
+  position: fixed;
+  background: #2e1e1e;
+  color: #ff4444;
+  padding: 15px 25px;
+  border: 2px solid #ff4444;
+  border-radius: 10px;
+  box-shadow: 0 0 20px rgba(255, 0, 0, 0.4);
+  font-size: 50px;
+  font-weight: bold;
+  animation: fadeIn 0.5s ease-in-out, fadeOut 0.5s ease-in-out forwards;
+  animation-delay: 0s , 1s;
+}
+
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+@keyframes fadeOut {
+  to {
+    opacity: 0;
+    transform: translateY(-20px);
+  }
+}
